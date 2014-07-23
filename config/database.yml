@@ -1,0 +1,34 @@
+
+default: &default
+  adapter: mysql
+  pool: 5
+  timeout: 5000
+
+development:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: practice_development
+  pool: 5
+  username: root
+  password: 
+  socket: mysqld.sock
+test:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: practice_test
+  pool: 5
+  username: root
+  password: 
+  socket: mysqld.sock
+
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: practice_production
+  pool: 5
+  username: root
+  password: 
+  socket: mysqld.sock
